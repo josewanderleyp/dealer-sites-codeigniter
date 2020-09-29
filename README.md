@@ -1,4 +1,4 @@
-# dealer-sites-codeigniter
+# Teste Dealer Site
 
 Para instalar o sistema, baixa clonar o projeto em sua máquina.
 
