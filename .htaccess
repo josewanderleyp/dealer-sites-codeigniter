@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /projetos/dealer-sites-codeigniter/
+	RewriteCond %{REQUEST_URI} ^system.*
+	RewriteRule ^(.*)$ /index.php/$1 [L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php/$1 [L]
+</IfModule>
+
+ # DISABLE CACHING <IfModule mod_headers.c> 	Header set Cache-Control "no-cache, no-store, must-revalidate" 	Header set Pragma "no-cache" 	Header set Expires 0 </IfModule> 
